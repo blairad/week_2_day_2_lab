@@ -5,8 +5,17 @@ require_relative("../bus_stops_persons.rb")
 
 class BusStopTest < MiniTest::Test
 
+def setup
+  @bus = Bus.new(22, "Ocean Terminal")
+end
 
+def test_has_route
+  assert_equal(22, @bus.route)
+end
 
+def test_has_destination
+  assert_equal("Ocean Terminal", @bus.destination)
+end
 
 
 
