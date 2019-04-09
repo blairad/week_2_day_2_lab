@@ -6,4 +6,9 @@ require_relative("../bus_passengers.rb")
 
 class PassengersTest < MiniTest::Test
 
+def setup
+  @passengers = Passengers.new(passengers)
+end
+
+
 end
