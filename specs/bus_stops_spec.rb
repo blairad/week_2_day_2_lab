@@ -17,7 +17,10 @@ def test_has_destination
   assert_equal("Ocean Terminal", @bus.destination)
 end
 
+def test_bus_has_noise
+  assert_equal("Broom Broom!", @bus.bus_noise("Broom Broom!"))
 
+end
 
 
 
